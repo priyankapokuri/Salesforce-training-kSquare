@@ -1,80 +1,57 @@
-# Placement Management System – Enterprise Trigger Architecture
+# Sprint Reflection
 
-## Project Overview
+## What Worked Well
 
-This sprint extends the Placement Management System by introducing event-driven automation using Salesforce Triggers.
-
-Instead of requiring users to manually execute business logic, the application now responds automatically whenever important business events occur.
+Understanding Triggers as business events instead of Apex code completely changed my perspective on Salesforce automation.
 
 ---
 
-# Technologies Used
+## Most Interesting Part
 
-- Salesforce CRM
-- Apex
-- Triggers
-- SOQL
-- DML
-- Developer Console
+Learning that a Trigger should not contain business logic.
+
+Instead, it should delegate responsibilities to Service classes.
 
 ---
 
-# Architecture
+## Biggest Challenge
 
-```
-Application Trigger
-        │
-        ▼
-ApplicationService
-        │
-        ├── Validation
-        ├── Statistics
-        ├── Notifications
-```
+The biggest challenge was understanding the separation of responsibilities between Triggers and Services.
 
 ---
 
-# User Stories Implemented
+## Lessons Learned
 
-- Automatically validate new applications.
-- Update placement statistics.
-- Send placement notifications.
-- Keep business logic inside Service classes.
-- Build reusable Trigger architecture.
-
----
-
-# Trigger Events
-
-Current Events
-
-- Before Insert
-- After Update
-
-Future Events
-
-- Internship Applications
-- Alumni Notifications
-- Department Reports
-
----
-
-# Engineering Principles
-
+- Triggers should remain short.
+- Services should contain business logic.
 - One Trigger per Object.
-- Small Trigger.
-- Service-Oriented Architecture.
-- Reusable Business Logic.
-- Maintainable Design.
+- Enterprise software grows through reusable components.
+- Clean architecture reduces future maintenance.
 
 ---
 
-# Learning Outcomes
+## Future Improvements
 
-After completing this sprint I understood:
+If this application were used by multiple universities, I would introduce:
 
-- Event-driven programming.
-- Before vs After Trigger events.
-- Clean Trigger architecture.
-- Service delegation.
-- Enterprise automation design.
+- StatisticsService
+- NotificationService
+- AlumniService
+- InternshipService
+- AuditService
+
+without modifying the existing Trigger.
+
+---
+
+## Today I Realised
+
+> Small Triggers often represent well-designed enterprise systems because they delegate work instead of performing it.
+
+---
+
+## Sprint Summary
+
+This sprint helped me understand that Triggers are event coordinators, not business processors.
+
+A clean Trigger architecture allows software to grow without becoming difficult to maintain.
