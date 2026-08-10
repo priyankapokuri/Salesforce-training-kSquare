@@ -1,4 +1,4 @@
-# Day 10 – Learning Notes
+# Day 11 – Learning Notes
 
 ## LWC Component Architecture
 
