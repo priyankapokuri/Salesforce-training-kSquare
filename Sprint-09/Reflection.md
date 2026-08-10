@@ -1,8 +1,4 @@
-
-### `reflection.md`
-
-```md
-# Sprint 8 – Reflection
+# Sprint 9 – Reflection
 
 ## Overview
 
