@@ -13,10 +13,10 @@ Send selected candidate information from Salesforce to the external recruitment 
 ```json
 {
   "studentId": "STU10045",
-  "name": "Ananya",
-  "email": "ananya@example.com",
-  "branch": "CSE",
-  "cgpa": 8.4,
+  "name": "priyanka",
+  "email": "priyanka@gmailcom",
+  "branch": "IT",
+  "cgpa": 9.13,
   "jobId": "JOB1007",
   "company": "KSquare",
   "role": "Salesforce Developer",
