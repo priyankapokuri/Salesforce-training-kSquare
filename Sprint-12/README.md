@@ -1,6 +1,6 @@
 # External Recruitment Gateway
 
-## Chapter 11 – Crossing the Salesforce Boundary
+## Chapter 12 – Crossing the Salesforce Boundary
 
 ### Overview
 
