@@ -1,0 +1,36 @@
+# SOQL Queries
+
+## Query 1: WHERE Clause Query
+
+```sql
+SELECT Id, Name, Service_Type__c, Estimated_Cost__c
+FROM Appointment__c
+WHERE Service_Type__c = 'Oil Change'
+
+
+##Query 2: ORDER BY + LIMIT
+
+SELECT Id, Name, Estimated_Cost__c
+FROM Appointment__c
+ORDER BY Estimated_Cost__c DESC
+LIMIT 5
+
+
+##Query 3: Relationship query (child-to-parent)
+
+SELECT Name, Vehicle__r.Name, Vehicle__r.Customer_Name__c 
+FROM Appointment__c
+
+
+##Query 4: Aggregate query with COUNT() / GROUP BY
+
+SELECT Service_Type__c, COUNT(Id) 
+FROM Appointment__c 
+GROUP BY Service_Type__c
+
+
+##Query 5: Comparison operator (>=) on a date or number field
+
+SELECT Name, Date__c, Estimated_Cost__c 
+FROM Appointment__c 
+WHERE Estimated_Cost__c >= 1000
